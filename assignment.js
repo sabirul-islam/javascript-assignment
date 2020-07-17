@@ -12,12 +12,28 @@ function feetToMile(feet){
     
 
 // Calculating Wood
-    function woodCalCulator(chair, table, bed){
+    function woodCalculator(chair, table, bed){
     var chairCount = 1 * chair;
     var tableCount = 3 * table;
     var bedCount = 5 * bed;
     var total = chairCount + tableCount + bedCount;
     return total;
+    }
+
+
+    
+// Brick calculation
+function brickCalculator(storeyed){
+    if(storeyed<=10){
+        return storeyed * 15 * 1000;
+    }
+    else if (storeyed<=20){
+        return (storeyed-10) * 12 * 1000 + 150000;
+    }
+    else if (storeyed<=Infinity){
+        return (storeyed-20) * 10 * 1000 + 270000;
+    }
+    return storeyed;
     }
 
 
@@ -34,20 +50,4 @@ function tinyFriend(friends){
         }
         }
     return tiny;
-    }
-
-
-    
-// Brick calculation
-function brickCalculator(storeyed){
-    if(storeyed<=10){
-        return storeyed * 15 * 1000;
-    }
-    if (storeyed<=20){
-        return (storeyed-10) * 12 * 1000 + 150000;
-    }
-    if (storeyed<=Infinity){
-        return (storeyed-20) * 10 * 1000 + 270000;
-    }
-    return storeyed;
     }
