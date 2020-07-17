@@ -5,19 +5,21 @@ function feetToMile(feet){
     return "Miles value can not be negative.";  //this conditoin for bonus mark
     }
     else{
-    return mile + " mile";
+    return mile;
     }
     }
 
     
+
 // Calculating Wood
     function woodCalCulator(chair, table, bed){
     var chairCount = 1 * chair;
     var tableCount = 3 * table;
-    var BedCount = 5 * bed;
-    var total = chairCount + tableCount + BedCount;
+    var bedCount = 5 * bed;
+    var total = chairCount + tableCount + bedCount;
     return total;
     }
+
 
 
 //Finding Tiny Friend
@@ -34,6 +36,8 @@ function tinyFriend(friends){
     return tiny;
     }
 
+
+    
 // Brick calculation
 function brickCalculator(storeyed){
     if(storeyed<=10){
